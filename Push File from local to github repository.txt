@@ -1,0 +1,33 @@
+first of all we need to create or add a folder which we need to push in github.com
+than we need to open the folder in vs code or visual studio than we need to go to
+terminal of the application. for make the directory or folder or local repository
+to git repository we need to go to terminal and type:
+git init
+and press enter.than the folder or local repo will be git folder or git repo. now 
+we can add any file or folder in the git repository which is previously local repo.
+after adding file we can check status of the file from the command line by typing:
+git status
+for adding all the file in the git repository we need to type:
+git add .
+than all the file will add in git not github.com. than we need to commit the file
+for that we need to type:
+git commit -m "Any massage of the change's"
+now for uploading all the file to github.com we need to first create a new repository.
+than we need to access the github repository to the local system. for that we need to
+type: 
+git remote add origin (Repository link)
+for checking origin we can type: 
+git remove -v  
+we can check which branch we are in now for that we need to type:
+git branch
+as default git branch is always in master in local but we need to rename it in main
+for that we need to type: 
+git branch -m main
+finally for push all the change's or the files in github.com we need to type:
+git push -u origin main
+after that all the file will be added in github repository. here -u is use to make pushing 
+commit more easy. because after this command we can add commit any file or folder from this
+repository by typing 
+git add
+git commit -m "push massage"
+git push
