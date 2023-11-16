@@ -17,7 +17,7 @@ than we need to access the github repository to the local system. for that we ne
 type: 
 git remote add origin (Repository link)
 for checking origin we can type: 
-git remove -v  
+git remote -v  
 we can check which branch we are in now for that we need to type:
 git branch
 as default git branch is always in master in local but we need to rename it in main
@@ -28,6 +28,21 @@ git push -u origin main
 after that all the file will be added in github repository. here -u is use to make pushing 
 commit more easy. because after this command we can add commit any file or folder from this
 repository by typing 
-git add
+git add .
+git commit -m "push massage"
+git push
+
+so all commands are:
+
+git init
+git status
+git add .
+git commit -m "Any massage of the change's"
+git remote add origin (Repository link)
+git remote -v 
+git branch
+git branch -m main
+git push -u origin main
+git add .
 git commit -m "push massage"
 git push
